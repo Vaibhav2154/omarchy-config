@@ -1,0 +1,1 @@
+/home/vaibhi/.config/omarchy/current/theme/neovim.lua

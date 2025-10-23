@@ -1,0 +1,63 @@
+# Import Omarchy theme
+general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
+
+# Environment
+[env]
+TERM = "alacritty"  # Better TERM for modern apps
+
+# Font configuration
+[font]
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+size = 12  # Slightly larger for readability
+
+# Window appearance
+[window]
+padding = { x = 14, y = 14 }
+decorations = "None"
+opacity = 0.8         # Optional: semi-transparent
+blur = true            # Optional: enable blur (requires compositor support)
+
+# Cursor settings
+[cursor]
+style = "Block"
+
+
+[colors.cursor]
+text = "#0a0e14"       # Matches Omarchy background
+cursor = "#b3b1ad"     # Matches Omarchy foreground
+
+# Keyboard bindings
+[keyboard]
+bindings = [
+  { key = "Insert", mods = "Shift", action = "Paste" },
+  { key = "Insert", mods = "Control", action = "Copy" }
+]
+
+# ~/.config/omarchy/current/theme/alacritty.toml
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+
+[colors.normal]
+black   = "#15161E"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
+
+[colors.bright]
+black   = "#414868"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
+
