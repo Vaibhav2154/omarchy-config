@@ -1,0 +1,114 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:void_black)\
+$os\
+$username\
+[](bg:blood_red fg:void_black)\
+$directory\
+[](bg:cursed_pink fg:blood_red)\
+$git_branch\
+$git_status\
+[](fg:cursed_pink bg:shadow_purple)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$python\
+$java\
+[](fg:shadow_purple bg:bone_ash)\
+$time\
+[ ](fg:bone_ash)\
+$cmd_duration\
+$line_break\
+$character
+"""
+
+palette = "sukuna"
+
+# ========== MODULES ==========
+
+[os]
+disabled = false
+style = "bg:void_black fg:bone_ash"
+
+[os.symbols]
+Arch = "󰣇"
+
+[username]
+show_always = true
+style_user = "bg:void_black fg:bone_ash"
+style_root = "bg:void_black fg:blood_red"
+format = "[ $user ]($style)"
+
+[directory]
+style = "bg:blood_red fg:bone_ash"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:cursed_pink fg:void_black"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:cursed_pink fg:void_black"
+format = "[ $all_status$ahead_behind ]($style)"
+
+[nodejs]
+symbol = ""
+style = "bg:shadow_purple fg:bone_ash"
+format = "[ $symbol $version ]($style)"
+
+[python]
+symbol = ""
+style = "bg:shadow_purple fg:bone_ash"
+format = "[ $symbol $version ]($style)"
+
+[rust]
+symbol = ""
+style = "bg:shadow_purple fg:bone_ash"
+format = "[ $symbol $version ]($style)"
+
+[golang]
+symbol = ""
+style = "bg:shadow_purple fg:bone_ash"
+format = "[ $symbol $version ]($style)"
+
+[java]
+symbol = ""
+style = "bg:shadow_purple fg:bone_ash"
+format = "[ $symbol $version ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:bone_ash fg:void_black"
+format = "[  $time ]($style)"
+
+[cmd_duration]
+show_milliseconds = true
+format = " $duration "
+style = "fg:cursed_pink"
+min_time = 2000
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = "[❯](bold fg:blood_red)"
+error_symbol   = "[❯](bold fg:cursed_pink)"
+vimcmd_symbol  = "[❮](bold fg:blood_red)"
+vimcmd_visual_symbol = "[❮](bold fg:shadow_purple)"
+
+# ========== SUKUNA PALETTE (IMAGE MATCHED) ==========
+
+[palettes.sukuna]
+void_black     = "#8A1959"
+blood_red     = "#C4162A"
+cursed_pink   = "#FF2F92"
+shadow_purple = "#2A0F2F"
+bone_ash      = "#E6D8CF"
+robe_gray     = "#9A8FA6"
+
