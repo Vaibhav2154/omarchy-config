@@ -7,7 +7,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
+  font-family: 'Liberation Mono';
   font-size: 14px;
 }
 
@@ -15,7 +15,7 @@
   margin-left: 8px;
 }
 
-ymodules-right {
+.modules-right {
   margin-right: 8px;
 }
 
@@ -49,7 +49,10 @@ ymodules-right {
 }
 
 tooltip {
-  padding: 2px;
+  padding: 6px 8px;
+}
+tooltip label {
+  color: whitesmoke;
 }
 
 #custom-update {
@@ -80,4 +83,14 @@ tooltip {
 
 #battery.critical {
   color: red;
+}
+
+#group-tray-expander .tray-group-item {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+#workspaces button:hover {
+  opacity: 0.7;
 }
