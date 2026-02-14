@@ -2,15 +2,16 @@
   "reload_style_on_change": true,
   "layer": "bottom",
   "position": "bottom",
-  "spacing": 0,
+  "spacing": 2,
   "height": 28,
+  "fixed-center": true,
 
   "modules-left": ["custom/omarchy"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "group/tray-expander",
     "custom/screenrecording-indicator",
     "custom/update",
-    "group/tray-expander",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -24,7 +25,9 @@
     "format": "{name}",
     "format-icons": {
       "active": ""
-    }
+    },
+    "disable-scroll": true
+    // "all-outputs": true
   },
 
   "custom/omarchy": {
