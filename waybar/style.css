@@ -19,6 +19,9 @@
   margin-right: 8px;
 }
 
+
+
+
 #workspaces button {
   all: initial;
   padding: 0 6px;
@@ -33,6 +36,7 @@
 
 #tray,
 #cpu,
+#clock,
 #battery,
 #network,
 #bluetooth,
